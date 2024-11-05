@@ -1,35 +1,28 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+const autor = 'Daniel';
 
-function App() {
-  const [count, setCount] = useState(0)
+const suma = (a: number,b: number) => { return (a+b)}
 
-  return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+export interface Book {
+    edition: number
+    title: string,
+}
+
+const App = ({title = 'valor default', edition}: Book) => {
+
+    return (
+        <>
+            <h1>Hola Mundo xd</h1>
+            <h3>Mi primer projecto react del {autor}</h3>
+            {/* <h4>{newAuthor.year}</h4> */}
+            <br />
+            <h4>Probando el uso de funciones</h4>
+            <h5>Suma de dos valores: {suma(34,67)}</h5>
+            <br />
+            <h4>Probando el uso de props</h4>
+            <h5>{title}</h5>
+            <h5>Edition: {edition}</h5>
+        </>
+    )
 }
 
 export default App

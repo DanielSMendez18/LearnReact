@@ -6,8 +6,11 @@ Hola! Este es un repositorio para estudiar y tener casos prácticos sobre los si
 
 Documentación:
 
-- https://globant.udemy.com/course/react-cero-experto/learn/lecture/19606256#overview
-- https://globant.udemy.com/course/react-the-complete-guide-incl-redux/learn/lecture/25595340#overview
+- Curso Udemy Español: https://globant.udemy.com/course/react-cero-experto/learn/lecture/19606256#overview
+- Curso Udemy Ingles: https://globant.udemy.com/course/react-the-complete-guide-incl-redux/learn/lecture/25595340#overview
+- React con TypeScript: https://es.react.dev/learn/typescript
+- Eventos: https://es.react.dev/reference/react-dom/components/common#react-event-object
+- Hooks (useState, ): https://es.react.dev/reference/react/hooks
 
 ## Pasos para Crear un proyecto nuevo con Vite
 
@@ -24,6 +27,69 @@ Documentación:
 - Inicia el servidor de desarrollo:
 
         npm run dev
+
+## Documentación React
+
+### 1. Componentes Funcionales
+
+Un componente funcional en React es una función de JavaScript que devuelve JSX (JavaScript XML). Esta función sirve como un bloque de construcción fundamental para crear interfaces de usuario en aplicaciones React. A diferencia de los componentes de clase, los componentes funcionales son más simples y concisos, lo que los hace ideales para muchas situaciones.
+
+**¿Cómo funciona un componente funcional?**
+
+1. Definición: Se define una función de JavaScript que recibe un objeto props como argumento. Este objeto contiene los datos que se pasarán al componente.
+2. Retorno de JSX: Dentro de la función, se devuelve el JSX que representa la estructura de la interfaz de usuario. Este JSX puede contener elementos HTML, otros componentes, y expresiones JavaScript.
+
+**Ejemplo Básico**
+
+```js
+import React from 'react'
+
+interface GreetingProps {
+  name: string;
+}
+
+const Greeting = ({ name }: GreetingProps) => {
+  return <h1>Hola, {name}!</h1>
+}
+
+function App() {
+  return <Greeting name="Mundo" />
+}
+
+export default App
+```
+
+En este ejemplo:
+
+- Greeting es el nombre del componente.
+- name es una propiedad que se pasa al componente y se utiliza para personalizar el saludo.
+
+**Diferencia con un componente de clase**
+
+Sintaxis básica
+
+- Componente de Clase: Utiliza la sintaxis de clases de ES6 y necesita extender de React.Component.
+- Componente Funcional: Es una función JavaScript o TypeScript que recibe props y devuelve JSX.
+
+Manejo de estados
+
+- Componente de Clase: Usa this.state y this.setState() para manejar el estado.
+- Componente Funcional: Con la introducción de los hooks (como useState), los componentes funcionales también pueden manejar el estado sin necesidad de clases.
+
+Ciclo de vida
+
+- Componentes de Clase: Utilizan métodos específicos como componentDidMount, componentDidUpdate y componentWillUnmount para manejar el ciclo de vida.
+- Componentes Funcionales: Utilizan el hook useEffect para gestionar el ciclo de vida de forma más flexible, ya que useEffect puede replicar el comportamiento de montaje, actualización y desmontaje de los componentes de clase.
+
+### 2. Hooks
+
+Nosotros tenemos los siguientes hooks
+
+#### useState
+
+useState es un hook de React que permite agregar estado a un componente funcional. Sin useState, el estado solo estaría disponible en componentes de clase, pero con este hook, los componentes funcionales también pueden tener y actualizar su propio estado.
+
+**_Revisar codigo en CounterApp.tsx_**
 
 # React + TypeScript + Vite
 
