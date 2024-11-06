@@ -11,6 +11,7 @@ Documentación:
 - React con TypeScript: https://es.react.dev/learn/typescript
 - Eventos: https://es.react.dev/reference/react-dom/components/common#react-event-object
 - Hooks (useState, ): https://es.react.dev/reference/react/hooks
+- Unit Test con Jest: https://jestjs.io/docs/getting-started
 
 ## Pasos para Crear un proyecto nuevo con Vite
 
@@ -104,6 +105,13 @@ const [count, setCount] = useState < number > 0
 **_Revisar codigo en CounterApp.tsx_**
 
 **_Revisar codigo en ProfileApp.tsx_**
+
+### 3. Unit Test con Jest
+
+Para trabajar con Jest debemos instalar las dependencias de desarrollo en el proyecto
+
+        npm install --save-dev jest
+        npm install --save-dev @types/jest
 
 # React + TypeScript + Vite
 
