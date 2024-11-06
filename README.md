@@ -89,7 +89,21 @@ Nosotros tenemos los siguientes hooks
 
 useState es un hook de React que permite agregar estado a un componente funcional. Sin useState, el estado solo estaría disponible en componentes de clase, pero con este hook, los componentes funcionales también pueden tener y actualizar su propio estado.
 
+Para usar useState, primero lo importas de React, y luego lo llamas con un valor inicial. Este valor puede ser cualquier tipo de dato, como un número, una cadena, un objeto o incluso un arreglo.
+
+```js
+const [state, setState] = useState(initialState)
+```
+
+Si usas TypeScript, puedes indicar explícitamente el tipo de dato de tu estado:
+
+```js
+const [count, setCount] = useState < number > 0
+```
+
 **_Revisar codigo en CounterApp.tsx_**
+
+**_Revisar codigo en ProfileApp.tsx_**
 
 # React + TypeScript + Vite
 
