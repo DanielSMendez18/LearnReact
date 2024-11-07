@@ -1,0 +1,51 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`@CounterApp #should increment the counter by 1 1`] = `
+<div>
+  <h1>
+    Counter App
+  </h1>
+  <h3>
+     Item: 
+    nombredemo
+  </h3>
+  <h3>
+     Value: 
+    4
+  </h3>
+  <button>
+     Add 
+  </button>
+  <button>
+     Remove 
+  </button>
+  <button>
+     Reset 
+  </button>
+</div>
+`;
+
+exports[`@CounterApp should increment the counter by 1 1`] = `
+<div>
+  <h1>
+    Counter App
+  </h1>
+  <h3>
+     Item: 
+    nombredemo
+  </h3>
+  <h3>
+     Value: 
+    4
+  </h3>
+  <button>
+     Add 
+  </button>
+  <button>
+     Remove 
+  </button>
+  <button>
+     Reset 
+  </button>
+</div>
+`;
