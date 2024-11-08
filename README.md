@@ -132,6 +132,12 @@ Luego creamos y configuramos los archivos
 
 Tambien para evitar que salte un error modificamos el archivo **package.json** eliminando el campo "type": "module"
 
+**Realizar pruebas unitarias**
+
+Ahora con la configuración lista, podemos iniciar las pruebas unitarias de cada Componente funcional.
+
+Para ello creamos una carpeta test, donde alojaremos los archivos .test.jsx
+
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
