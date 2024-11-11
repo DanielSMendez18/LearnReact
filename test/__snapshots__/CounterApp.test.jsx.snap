@@ -1,0 +1,65 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`@CounterApp #should increment the counter by 1 1`] = `
+<div>
+  <h1>
+    Counter App
+  </h1>
+  <h3
+    id="itemText"
+  >
+     Item: 
+    nombredemo
+  </h3>
+  <h3
+    data-testid="test-value"
+  >
+     New Value: 
+    4
+  </h3>
+  <h4>
+    nombredemo
+  </h4>
+  <button>
+     Add 
+  </button>
+  <button>
+     Remove 
+  </button>
+  <button>
+     Reset 
+  </button>
+</div>
+`;
+
+exports[`@CounterApp 2 #should to make match with the snapshop 1`] = `
+<div>
+  <h1>
+    Counter App
+  </h1>
+  <h3
+    id="itemText"
+  >
+     Item: 
+    Misión rescate
+  </h3>
+  <h3
+    data-testid="test-value"
+  >
+     New Value: 
+    1
+  </h3>
+  <h4>
+    Misión rescate
+  </h4>
+  <button>
+     Add 
+  </button>
+  <button>
+     Remove 
+  </button>
+  <button>
+     Reset 
+  </button>
+</div>
+`;

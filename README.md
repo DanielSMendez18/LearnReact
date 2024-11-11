@@ -11,6 +11,9 @@ Documentación:
 - React con TypeScript: https://es.react.dev/learn/typescript
 - Eventos: https://es.react.dev/reference/react-dom/components/common#react-event-object
 - Hooks (useState, ): https://es.react.dev/reference/react/hooks
+- Unit Test con Jest: https://jestjs.io/docs/getting-started
+- Jest con Testing React Apps: https://jestjs.io/docs/tutorial-react
+- Testing Library: https://testing-library.com/
 
 ## Pasos para Crear un proyecto nuevo con Vite
 
@@ -104,6 +107,36 @@ const [count, setCount] = useState < number > 0
 **_Revisar codigo en CounterApp.tsx_**
 
 **_Revisar codigo en ProfileApp.tsx_**
+
+### 3. Unit Test con Jest
+
+Para trabajar con Jest debemos instalar las dependencias de desarrollo en el proyecto
+
+        npm install --save-dev jest
+        npm install --save-dev @types/jest
+        npm install --save-dev ts-jest
+        npm install --save-dev babel-jest @babel/core @babel/preset-env
+        npm install --save-dev @babel/preset-typescript
+        npm install --save-dev @babel/preset-react react-test-renderer
+        npm install --save-dev jest-enviroment-jsdom
+
+DOM Testing, necesitamos agregar una instalación adicional de testing-library para las pruebas del DOM
+
+        npm install --save-dev @testing-library/react
+
+Luego creamos y configuramos los archivos
+
+- **bable.config.cjs**
+- **jest.config.js**
+- **jest.setup.js**
+
+Tambien para evitar que salte un error modificamos el archivo **package.json** eliminando el campo "type": "module"
+
+**Realizar pruebas unitarias**
+
+Ahora con la configuración lista, podemos iniciar las pruebas unitarias de cada Componente funcional.
+
+Para ello creamos una carpeta test, donde alojaremos los archivos .test.jsx
 
 # React + TypeScript + Vite
 

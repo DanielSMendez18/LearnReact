@@ -30,8 +30,9 @@ const CounterApp = ({name, value} : Item) => {
     return(
         <>
             <h1>Counter App</h1>
-            <h3> Item: {name}</h3>
-            <h3> Value: {counter}</h3>
+            <h3 id='itemText'> Item: {name}</h3>
+            <h3 data-testid="test-value"> New Value: {counter}</h3>
+            <h4>{name}</h4>
             <button onClick={handleAdd}> Add </button> 
             <button onClick={handleRemove}> Remove </button> 
             <button onClick={handleReset}> Reset </button> 
